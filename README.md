@@ -82,3 +82,23 @@ WHERE start BETWEEN CAST('2018-07-10' AS DATE) AND DATE(NOW());
 `UPDATE employee_payroll SET gender='M' WHERE name IN('Karzman','Alex');`
 
 `UPDATE employee_payroll SET gender='F' WHERE name='Nadia';`
+
+## UC7
+
+> Using SUM function 
+
+`SELECT SUM(salary) FROM employee_payroll WHERE gender='M' GROUP BY gender;`
+
+`SELECT gender,SUM(salary) FROM employee_payroll GROUP BY gender;`
+
+> Using AVG function
+
+`SELECT AVG(salary) FROM employee_payroll WHERE gender='M' GROUP BY gender;`
+
+> Using COUNT function
+
+`SELECT gender,COUNT(*) FROM employee_payroll GROUP BY gender;`
+
+> Using MAX function
+
+`SELECT name,MAX(salary) FROM employee_payroll GROUP BY gender;`
