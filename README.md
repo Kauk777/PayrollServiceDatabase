@@ -71,3 +71,14 @@ CREATE TABLE employee_payroll
 SELECT * FROM employee_payroll 
 WHERE start BETWEEN CAST('2018-07-10' AS DATE) AND DATE(NOW());
 ```
+## UC6
+
+> Alter table to add gender field
+
+`ALTER TABLE employee_payroll ADD gender CHAR(1) AFTER name;`
+
+> Updating gender field by name
+
+`UPDATE employee_payroll SET gender='M' WHERE name IN('Karzman','Alex');`
+
+`UPDATE employee_payroll SET gender='F' WHERE name='Nadia';`
