@@ -38,3 +38,18 @@ CREATE TABLE employee_payroll
 
 `DESCRIBE employee_payroll;`
 
+## UC3
+
+> Adding Data to employee payroll table
+
+```
+ INSERT INTO employee_payroll (name,salary,start) VALUES
+    ('Karzman',700000,'2018-05-07'),
+    ('Alex',900000,'2019-07-07'),
+    ('Nadia',1200000,'2020-07-06');
+```
+
+> Retrieving Records in employee table
+
+`select * from employee_payroll;`
+
