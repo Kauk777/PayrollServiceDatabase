@@ -51,5 +51,10 @@ CREATE TABLE employee_payroll
 
 > Retrieving Records in employee table
 
-`select * from employee_payroll;`
+`SELECT * FROM employee_payroll;`
 
+## UC4
+
+>Retrieving salary records
+
+`SELECT salary FROM employee_payroll;`
