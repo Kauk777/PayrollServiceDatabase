@@ -58,3 +58,16 @@ CREATE TABLE employee_payroll
 >Retrieving salary records
 
 `SELECT salary FROM employee_payroll;`
+
+## UC5
+
+> Retrieving Alex salary
+
+`SELECT salary FROM employee_payroll WHERE name='Alex';`
+
+> Selecting records after particular date
+
+```
+SELECT * FROM employee_payroll 
+WHERE start BETWEEN CAST('2018-07-10' AS DATE) AND DATE(NOW());
+```
